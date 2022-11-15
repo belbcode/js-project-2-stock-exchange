@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/company.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="../company.js"></script>
+    <script defer type="module" src="../loadChart.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div id="loader"></div>
+    <div id="body-wrapper"class="body-wrapper">
+        <div class="sections" id="grandparent-container">
+            <div class="main">
+                <div class="view">
+                    <div class="flex-row">
+                        <img id="image" src="" alt="blah">
+                        <h1 id="companyName"></h1>
+                    </div>
+                    <canvas id="myChart"></canvas>
+                </div>
+                <div class="stock-values">
+                    <div id="price"></div>
+                    <div id="beta"></div>
+                    <div id="volAvg"></div>
+                    <div id="lastDiv"></div>
+                    <div id="range"></div>
+                    <div id="changes"></div>
+                    <div id="changesPercentage"></div>
+                </div>
+            </div>
+            <div class="secondary">
+                <!-- <div class="flex-row-center">
+                    <div> description</div>
+                    <div class="reveal-hide">Button</div>
+                </div> -->
+                <div class="description">
+                    <!-- <div id="website"></div> -->
+                    <a id="website" href=""></a>
+                    <div id="description"></div>
+                </div>
+                <div class="flex-row">
+                    <div class="contact-info">
+                        <div id="website"></div>
+                        <div id="phone"></div>
+                        <div id="address"></div>
+                        <div id="city"></div>
+                        <div id="state"></div>
+                        <div id="zip"></div>
+                        <div id="country"></div>
+                    </div>
+                    <div class="exchange-info">
+                        <div id="exchange"></div>
+                        <div id="currency"></div>
+                        <div id="ipoDate"></div>
+                        <div id="industry"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

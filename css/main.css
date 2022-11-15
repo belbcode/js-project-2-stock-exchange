@@ -1,0 +1,13 @@
+.body-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.side-by-side {
+    display: flex;
+    flex-direction: row;
+}
+
+.loader {
+    display: flex;
+}

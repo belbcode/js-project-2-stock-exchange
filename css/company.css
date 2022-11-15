@@ -1,0 +1,129 @@
+/* .body-wrapper {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: .75em;
+    display: flex;
+    justify-content: fle;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.sections {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.view {
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    justify-self: center;
+}
+
+canvas {
+    max-width: fit-content;
+}
+.sections > div {
+
+}
+
+
+.sections > div > div{
+}
+
+.sections > div > div :hover {
+    cursor: pointer;
+}
+
+.sections > div > div >div {
+
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.secondary {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+.view {
+    flex-direction: row ;
+    flex-grow: 6;
+}
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+}
+.flex-row-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.stock-values {
+    flex-grow: 4;
+    align-self: center;
+}
+.stock-values > div {
+    margin: 1em;
+    font-size: larger;
+}
+
+.identifiers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.identifiers :hover {
+    cursor: pointer;
+}
+
+.stock-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.stock-info > div {
+    padding: 2rem;
+    margin: 1em;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#image {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;    
+}
+#image > img {
+    display: flex;
+}
+
+.reveal-hide {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1.5em;
+    padding-right: 1.5em    ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: grey;
+    align-self: center;
+
+
+}
+
+img {
+    width: fit-content;
+} */
