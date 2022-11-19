@@ -22,10 +22,15 @@ class Marquee {
             const div = document.createElement('div')
             div.className = "marquee-element"
     
-                const innerDiv = document.createElement('div')
-                innerDiv.innerText = `${marqueeData[i].symbol} ${marqueeData[i].change}`
+                const innerDiv = document.createElement('div') //if order changes it messes up the onclick event clickFromMarquee which is dependant on the order
+                innerDiv.innerText = `${marqueeData[i].symbol}`
+                const innerDiv2 = document.createElement('div')
+                innerDiv2.innerText = `${marqueeData[i].change}`
+                innerDiv2.style.color = innerDiv2.innerText[0] === '-' ? 'red' :'green'
             
-            div.append(innerDiv)
+            div.onclick = clickFromMarquee
+
+            div.append(innerDiv, innerDiv2)
             this.array.push(div)
             if(i === end-1) {
                 console.log(marquee.childNodes.length)
@@ -68,7 +73,7 @@ class Marquee {
                 k = false
             }
             k++;
-        }, 75)
+        }, 150)
     }
 }
 
@@ -82,6 +87,10 @@ function findVw(vwStr) {
         str += modString[i]
     }
 
+}
+
+function clickFromMarquee(x) {
+    window.location.href = `/views/company.html?symbol=${this.childNodes[0].innerText}`
 }
 
 export default Marquee

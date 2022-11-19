@@ -49,7 +49,19 @@ body {
 }
 
 .marquee-element {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0.5em;
+    margin: 0.25em;
+    border: 1px solid black;
     width: 10vw
+
+}
+
+.marquee :hover {
+    cursor: pointer;
+    background-color: rgb(230, 230, 230);
 }
 
 .outer {

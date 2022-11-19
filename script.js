@@ -73,6 +73,9 @@ function stopLoader(element, intervalID) { //stops the load loop
 const runSearch = async (searchQuery) => { //main search function
 
     //this section handles cosmetics on the page
+    if(searchQuery==='') {
+        return
+    }
     const myClear = loader(document.getElementById('loader')) 
     document.getElementById('search-results').hidden = true
 
