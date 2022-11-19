@@ -5,12 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="icon" type="image/png" href="../stock.png"/>
     <link rel="stylesheet" href="../css/main.css">
-    <script defer src="../script.js"></script>
+    <script defer type="module"src="../script.js"></script>
 </head>
 <body>
+    <div class="outer">
+        <div id="marquee"class="marquee" style="">
+        </div>
+    </div>
     <div class="body-wrapper">
-        <div class="center">
+        <div class="selector-wrapper">
+            <!-- <button>Show Options</button> -->
+            <select name="" id="selector">
+            </select>
+        </div>
+        <div class="center" id="">
             <div class="side-by-side">
                 <input type="text" class="fancy" id="search"> 
                 <button id="search-button">search</button>

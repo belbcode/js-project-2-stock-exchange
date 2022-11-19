@@ -1,3 +1,5 @@
+body {
+}
 .body-wrapper {
     display: flex;
     justify-content: center;
@@ -10,4 +12,46 @@
 
 .loader {
     display: flex;
+}
+
+.flex-row {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    display: flex;
+    margin-right: 1em;
+    padding: 1em;
+}
+
+#search-results :hover {
+    background-color: rgb(221, 201, 201)
+}
+
+.flex-row > a {
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.selector-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.icon {
+    width:2em;
+    height: auto;
+}
+
+.marquee {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 200vw;
+}
+
+.marquee-element {
+    width: 10vw
+}
+
+.outer {
+    overflow: hidden;
 }
