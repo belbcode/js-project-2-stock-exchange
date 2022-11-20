@@ -9,12 +9,17 @@ class Marquee {
     fetchData = async function() {
         const response = await fetch(this.endpoint).then((res)=>res.json()).then((resJson)=>resJson)
         this.data = response
+        console.log(this.data)
         return response
     }
 
     populateMarquee = async function(start = 0, iteration = 1) {
         const marquee = this.element
         const marqueeData = this.data
+        if(this.data.statusCode !== 200) {
+            console.log('endpoint error, endpoint poopy itself')
+            return
+        }
         const end = iteration === 1 ? 72 : (1+iteration)*36 //insures there is always a buffer of 37 elements, this was a pain to 
         console.log(iteration, start, end)
         this.array = []

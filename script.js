@@ -1,6 +1,13 @@
 import Marquee from "./marquee.js"
+import SearchForm from './searchForm.js'
+import SearchResult from "./searchResult.js" 
 const searchbutton = document.getElementById('search-button')
 const input = document.getElementById('search')
+
+// const searchForm = new SearchForm(document.getElementById('search'))
+// const searchResult = new SearchResult(document.getElementById('search-results'))
+
+// searchResult.createList(searchForm.callAPI)
 
 function callAPI(apiCall) { //fetches data returns JSON
 
@@ -24,6 +31,7 @@ function createList(elementToAppend, arrayOfJsonData) { //iterates through data 
         const listElementQuickData = await fetch(`https://stock-exchange-dot-full-stack-course-services.ew.r.appspot.com/api/v3/company/profile/${symbol}`).then(res=>res.json()).then(resJson=> resJson)
 
         const listItem = document.createElement('li')
+            console.log(listElementQuickData)
 
             const imgOfItem = document.createElement('img')
             imgOfItem.src = listElementQuickData.profile.image
@@ -135,10 +143,7 @@ document.getElementById('selector').addEventListener('input', ()=> { //executes 
     runSearch(input.value)
 })
 
-const arrayOfDivs = []
-
 const myMarquee = new Marquee(document.getElementById('marquee'))
-
 await myMarquee.fetchData()
 myMarquee.spinMarquee()
 
